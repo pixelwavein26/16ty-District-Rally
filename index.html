@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanchrapara District Association - 16th District Rally</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f0f7f0;
+            color: #1e3c1e;
+            line-height: 1.6;
+        }
+
+        /* Animated Top Bar */
+        .top-bar {
+            background: #1e4a1e;
+            color: white;
+            padding: 12px 0;
+            border-bottom: 4px solid #ff8c1a;
+            background: linear-gradient(90deg, #1e4a1e 0%, #2a6b2a 100%);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: scrollText 20s linear infinite;
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #ffaa33;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            padding-left: 100%;
+        }
+
+        .marquee-content i {
+            margin: 0 15px;
+            color: #ffaa33;
+            font-size: 1.2rem;
+        }
+
+        @keyframes scrollText {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Hover effect to pause animation */
+        .marquee:hover .marquee-content {
+            animation-play-state: paused;
+        }
+
+        header {
+            background: linear-gradient(145deg, #ffffff 0%, #f0f7f0 100%);
+            color: #1e4a1e;
+            padding: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,40,0,0.15);
+            border-bottom: 4px solid #ff8c1a;
+        }
+
+        .header-container {
+            width: 90%;
+            max-width: 1400px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo-group {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            flex: 1;
+            justify-content: flex-start;
+        }
+
+        .rally-logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #ffaa33;
+            background: white;
+            box-shadow: 0 0 25px rgba(255,170,51,0.4);
+            flex-shrink: 0;
+            transition: transform 0.3s;
+        }
+
+        .rally-logo:hover {
+            transform: scale(1.08);
+        }
+
+        .rally-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .district-title {
+            text-align: center;
+            line-height: 1.5;
+            flex: 2;
+        }
+
+        .district-title .bengali {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #1e4a1e;
+            display: block;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.1);
+            letter-spacing: 1px;
+            font-family: 'Nirmala UI', 'Vrinda', 'Segoe UI', sans-serif;
+            margin-bottom: 10px;
+        }
+
+        .district-title .hindi {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #ff8c1a;
+            display: block;
+            margin-bottom: 10px;
+            font-family: 'Nirmala UI', 'Mangal', 'Segoe UI', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .district-title .english {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1e4a1e;
+            display: block;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .district-logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #ffaa33;
+            background: white;
+            box-shadow: 0 0 25px rgba(255,170,51,0.4);
+            flex-shrink: 0;
+            transition: transform 0.3s;
+        }
+
+        .district-logo:hover {
+            transform: scale(1.08);
+        }
+
+        .district-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        nav {
+            background: #154615;
+            padding: 15px 0;
+            border-bottom: 2px solid #ff8c1a;
+            border-top: 1px solid #5f9f5f;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .nav-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .nav-container a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 8px 25px;
+            border-radius: 50px;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-container a:hover {
+            background: #ffaa33;
+            color: #1e4a1e;
+            border-color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255,170,51,0.4);
+        }
+
+        .main {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        /* Updated circular-hero with beautiful gradient background */
+        .circular-hero {
+            background: linear-gradient(135deg, #1e4a1e 0%, #2a6b2a 50%, #3a8c3a 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 40px;
+            box-shadow: 0 20px 40px rgba(0,40,0,0.3);
+            border: 4px solid #ffaa33;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .circular-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,170,51,0.15) 0%, transparent 60%);
+            animation: rotate 20s linear infinite;
+        }
+
+        .circular-hero::after {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,215,0,0.1) 0%, transparent 60%);
+            animation: rotateReverse 25s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes rotateReverse {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(-360deg); }
+        }
+
+        .circular-hero h2 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-shadow: 4px 4px 0 #0a2f0a;
+            line-height: 1.2;
+            position: relative;
+            z-index: 2;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .circular-hero .date-badge {
+            background: linear-gradient(135deg, #ffaa33 0%, #ff8c1a 100%);
+            color: #1e4a1e;
+            display: inline-block;
+            padding: 18px 50px;
+            border-radius: 60px;
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 20px 0;
+            border: 4px solid white;
+            box-shadow: 0 10px 0 #b35f00, 0 10px 20px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 2;
+            transition: all 0.3s;
+            letter-spacing: 1px;
+        }
+
+        .circular-hero .date-badge:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 13px 0 #b35f00, 0 15px 30px rgba(0,0,0,0.3);
+        }
+
+        .circular-hero p {
+            font-size: 1.4rem;
+            max-width: 800px;
+            background: rgba(0,0,0,0.3);
+            padding: 15px 30px;
+            border-radius: 50px;
+            position: relative;
+            z-index: 2;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.2);
+            margin: 15px auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            display: inline-block;
+        }
+
+        .card-panel {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 40px;
+            padding: 50px;
+            box-shadow: 0 20px 40px rgba(0,40,0,0.15);
+            border: 2px solid #ffaa33;
+            margin: 40px 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #1e4a1e;
+            border-left: 15px solid #ff8c1a;
+            padding-left: 30px;
+            margin-bottom: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .circular-box {
+            background: linear-gradient(135deg, #ffffff 0%, #fafffa 100%);
+            border-radius: 40px;
+            padding: 50px;
+            margin: 40px 0;
+            border: 4px solid #ff8c1a;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .circular-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circular-text {
+            flex: 1 1 400px;
+        }
+
+        .circular-text h3 {
+            font-size: 2.2rem;
+            color: #1e4a1e;
+            margin-bottom: 20px;
+        }
+
+        .circular-text ul {
+            margin: 20px 0;
+            list-style: none;
+        }
+
+        .circular-text li {
+            margin: 15px 0;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .circular-text li i {
+            color: #ff8c1a;
+            font-size: 1.3rem;
+        }
+
+        .pdf-icon {
+            font-size: 12rem;
+            color: #d32f2f;
+            transition: all 0.3s;
+            filter: drop-shadow(0 10px 20px rgba(211,47,47,0.3));
+        }
+
+        .pdf-icon:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .btn-pdf {
+            background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 60px;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.3s;
+            border: 3px solid #ffaa33;
+            margin-top: 20px;
+            box-shadow: 0 10px 20px rgba(211,47,47,0.3);
+        }
+
+        .btn-pdf:hover {
+            background: #ff8c1a;
+            color: #1e4a1e;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(255,140,26,0.4);
+        }
+
+        .registration-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .reg-info {
+            flex: 1 1 300px;
+        }
+
+        .reg-info ul {
+            list-style: none;
+        }
+
+        .reg-info li {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: linear-gradient(135deg, #e1f0e1 0%, #d0e8d0 100%);
+            padding: 20px 25px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 15px rgba(0,40,0,0.1);
+            border: 1px solid #ffaa33;
+        }
+
+        .reg-info i {
+            font-size: 2rem;
+            color: #ff8c1a;
+            width: 40px;
+            text-align: center;
+        }
+
+        .dropdown-container {
+            flex: 1 1 400px;
+            background: linear-gradient(135deg, #ffffff 0%, #f8fff8 100%);
+            border: 4px solid #1e4a1e;
+            border-radius: 50px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 15px 15px 0 #a3d8a3;
+        }
+
+        .dropdown-container h3 {
+            font-size: 2.2rem;
+            color: #1e4a1e;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .group-dropdown {
+            width: 100%;
+            padding: 20px 25px;
+            font-size: 1.2rem;
+            border: 3px solid #ff8c1a;
+            border-radius: 60px;
+            background: white;
+            color: #1e4a1e;
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231e4a1e'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 20px center;
+            background-size: 30px;
+        }
+
+        .group-dropdown:hover {
+            border-color: #1e4a1e;
+            box-shadow: 0 5px 20px rgba(255,140,26,0.3);
+        }
+
+        .group-dropdown:focus {
+            outline: none;
+            border-color: #ffaa33;
+            box-shadow: 0 0 0 4px rgba(255,170,51,0.3);
+        }
+
+        .group-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .group-btn {
+            background: linear-gradient(135deg, #1e4a1e 0%, #2a6b2a 100%);
+            color: white;
+            padding: 18px 25px;
+            border-radius: 60px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.3s;
+            border: 2px solid #ffaa33;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .group-btn:hover {
+            background: #ff8c1a;
+            color: #1e4a1e;
+            transform: translateX(10px);
+            border-color: #1e4a1e;
+        }
+
+        .group-btn i {
+            font-size: 1.5rem;
+        }
+
+        /* Modern Schedule Toggle Styles */
+        .schedule-container {
+            margin: 50px 0;
+        }
+
+        .schedule-toggles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .toggle-card {
+            background: white;
+            border-radius: 30px;
+            padding: 30px 40px;
+            min-width: 220px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 3px solid #e0e0e0;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .toggle-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #ffaa33 0%, #ff8c1a 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+
+        .toggle-card:hover {
+            transform: translateY(-8px);
+            border-color: #ffaa33;
+            box-shadow: 0 20px 30px rgba(255,140,26,0.2);
+        }
+
+        .toggle-card.active {
+            border-color: #ffaa33;
+            box-shadow: 0 15px 30px rgba(255,140,26,0.3);
+        }
+
+        .toggle-card.active::before {
+            opacity: 1;
+        }
+
+        .toggle-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .toggle-card .day-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1e4a1e;
+            line-height: 1;
+            transition: all 0.3s;
+        }
+
+        .toggle-card .day-month {
+            font-size: 1.2rem;
+            color: #666;
+            margin-top: 5px;
+            transition: all 0.3s;
+        }
+
+        .toggle-card .day-name {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #ff8c1a;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 2px dashed #ffaa33;
+            transition: all 0.3s;
+        }
+
+        .toggle-card.active .day-number,
+        .toggle-card.active .day-month,
+        .toggle-card.active .day-name {
+            color: white;
+        }
+
+        .toggle-card.active .day-name {
+            border-top-color: white;
+        }
+
+        .toggle-icon {
+            font-size: 2rem;
+            color: #ffaa33;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+        }
+
+        .toggle-card.active .toggle-icon {
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .schedule-panel {
+            background: linear-gradient(135deg, #ffffff 0%, #fafffa 100%);
+            border-radius: 50px;
+            padding: 40px;
+            margin: 30px 0;
+            border: 4px solid #ff8c1a;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transform-origin: top;
+            animation: slideDown 0.5s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .schedule-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .schedule-info {
+            flex: 1 1 400px;
+        }
+
+        .schedule-info h3 {
+            font-size: 2.5rem;
+            color: #1e4a1e;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .schedule-info h3 i {
+            color: #ff8c1a;
+        }
+
+        .schedule-info ul {
+            list-style: none;
+            margin: 25px 0;
+        }
+
+        .schedule-info li {
+            margin: 12px 0;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #e1f0e1 0%, #d0e8d0 100%);
+            border-radius: 40px;
+            border-left: 5px solid #ff8c1a;
+        }
+
+        .schedule-info li i {
+            color: #ff8c1a;
+            font-size: 1.2rem;
+            min-width: 25px;
+        }
+
+        .schedule-pdf-btn {
+            background: linear-gradient(135deg, #1e4a1e 0%, #2a6b2a 100%);
+            color: white;
+            padding: 20px 45px;
+            border-radius: 80px;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 20px;
+            transition: all 0.3s;
+            border: 3px solid #ffaa33;
+            box-shadow: 0 10px 20px rgba(30,74,30,0.3);
+            margin-top: 20px;
+        }
+
+        .schedule-pdf-btn:hover {
+            background: #ff8c1a;
+            color: #1e4a1e;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(255,140,26,0.4);
+        }
+
+        .schedule-pdf-btn i {
+            font-size: 2rem;
+        }
+
+        .schedule-icon {
+            font-size: 10rem;
+            color: #ff8c1a;
+            transition: all 0.3s;
+            filter: drop-shadow(0 10px 20px rgba(255,140,26,0.3));
+        }
+
+        .schedule-icon:hover {
+            transform: rotate(5deg) scale(1.1);
+        }
+
+        .map-notice {
+            background: linear-gradient(135deg, #ffffff 0%, #f0f7f0 100%);
+            border-radius: 40px;
+            padding: 35px;
+            margin: 40px 0;
+            border-left: 15px solid #ff8c1a;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .map-notice i {
+            font-size: 4rem;
+            color: #ff8c1a;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #1e4a1e 0%, #2a6b2a 100%);
+            color: white;
+            padding: 50px;
+            border-radius: 40px;
+            margin: 40px 0;
+            text-align: center;
+            border: 4px solid #ffaa33;
+        }
+
+        .contact-section h2 {
+            color: white;
+            border-left-color: #ffaa33;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .contact-item {
+            background: rgba(255,255,255,0.15);
+            padding: 20px 35px;
+            border-radius: 60px;
+            backdrop-filter: blur(5px);
+            border: 2px solid #ffaa33;
+            font-size: 1.2rem;
+        }
+
+        .contact-item i {
+            font-size: 1.8rem;
+            color: #ffaa33;
+            margin-right: 12px;
+        }
+
+        footer {
+            background: #0f2f0f;
+            color: #e0e0c0;
+            padding: 40px 0 20px;
+            margin-top: 80px;
+            border-top: 8px solid #ff8c1a;
+        }
+
+        .footer-content {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            text-align: center;
+        }
+
+        .footer-content .rail {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ffdb9f;
+            text-transform: uppercase;
+        }
+
+        .developer-credit {
+            color: #ffdb9f;
+            font-size: 0.95rem;
+            margin-top: 10px;
+            padding: 8px 20px;
+            background: rgba(255,170,51,0.1);
+            border-radius: 40px;
+            display: inline-block;
+        }
+
+        .developer-credit i {
+            color: #ffaa33;
+            margin: 0 5px;
+        }
+
+        .developer-credit strong {
+            color: #ffaa33;
+            font-weight: 600;
+        }
+
+        /* Guidelines text styling */
+        .guidelines-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #1e3c1e;
+            background: linear-gradient(135deg, #ffffff 0%, #f8fff8 100%);
+            padding: 40px;
+            border-radius: 30px;
+            border-left: 10px solid #ff8c1a;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .guidelines-text p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .guidelines-text i {
+            color: #ff8c1a;
+            margin-right: 10px;
+        }
+
+        /* responsive */
+        @media (max-width: 900px) {
+            .district-title .bengali { font-size: 2.2rem; }
+            .district-title .hindi { font-size: 2rem; }
+            .district-title .english { font-size: 1.8rem; }
+            .rally-logo, .district-logo { width: 110px; height: 110px; }
+            .circular-hero h2 { font-size: 3rem; }
+            .circular-hero .date-badge { font-size: 1.6rem; padding: 15px 30px; }
+            .marquee-content { font-size: 1.1rem; }
+        }
+
+        @media (max-width: 700px) {
+            .circular-hero h2 { font-size: 2.2rem; }
+            .circular-hero .date-badge { font-size: 1.3rem !important; padding: 12px 20px; }
+            .district-title .bengali { font-size: 1.8rem; }
+            .district-title .hindi { font-size: 1.6rem; }
+            .district-title .english { font-size: 1.4rem; }
+            .rally-logo, .district-logo { width: 80px; height: 80px; }
+            .schedule-info h3 { font-size: 2rem; }
+            .schedule-info li { font-size: 1rem; padding: 10px 15px; }
+            .map-notice { flex-direction: column; text-align: center; }
+            .guidelines-text { padding: 25px; font-size: 1.1rem; }
+            .toggle-card { padding: 20px 30px; min-width: 180px; }
+            .toggle-card .day-number { font-size: 2rem; }
+            .header-container { justify-content: center; }
+            .logo-group { justify-content: center; }
+            .contact-info { flex-direction: column; gap: 15px; }
+            .contact-item { width: 100%; }
+            .marquee-content { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Animated Top Bar -->
+    <div class="top-bar">
+        <div class="marquee">
+            <div class="marquee-content">
+                <i class="fas fa-train"></i> EASTERN RAILWAY  <i class="fas fa-tree"></i>  BHARAT SCOUTS & GUIDES  <i class="fas fa-route"></i>  EASTERN RAILWAY  <i class="fas fa-tree"></i>  BHARAT SCOUTS & GUIDES  <i class="fas fa-route"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with Larger Logos and Bigger Bold Text -->
+    <header>
+        <div class="header-container">
+            <div class="logo-group">
+                <!-- Rally Logo (Left Side) - Even Larger Size -->
+                <div class="rally-logo">
+                    <img src="https://drive.google.com/thumbnail?id=1A4CCfNqB5bXKRnmIxFYImiZkNMEdpjRH" alt="16th District Rally Logo">
+                </div>
+                
+                <!-- Trilingual Title (Center) - Bigger and Bolder -->
+                <div class="district-title">
+                    <span class="bengali">কাঁচড়াপাড়া জেলা সমিতি</span>
+                    <span class="hindi">कांचरापाड़ा जिला संगठन</span>
+                    <span class="english">KANCHRAPARA DISTRICT ASSOCIATION</span>
+                </div>
+            </div>
+
+            <!-- District Logo (Right Side) - Even Larger Size -->
+            <div class="district-logo">
+                <img src="https://drive.google.com/thumbnail?id=14WaFrU3VAY3GbTNYTkPJg2EAB71SrMGk" alt="Kanchrapara District Association Logo">
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#circular"><i class="fas fa-file-pdf"></i> Circular</a>
+            <a href="#registration"><i class="fas fa-pen-alt"></i> Registration</a>
+            <a href="#schedule"><i class="fas fa-calendar"></i> Schedule</a>
+            <a href="#contact"><i class="fas fa-address-card"></i> Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="main">
+
+        <!-- Circular Hero with Updated Title and Date -->
+        <div id="circular" class="circular-hero">
+            <h2>16TH DISTRICT RALLY</h2>
+            <div class="date-badge">From 25th March to 27th March 2026</div>
+            <p><i class="fas fa-map-pin"></i> District Training Centre, 04th Avenue, Foreman Colony, Kanchrapara.</p>
+        </div>
+
+        <!-- Circular PDF with Updated Link -->
+        <div class="circular-box">
+            <h2 class="section-title"><i class="fas fa-file-pdf"></i> Official Circular</h2>
+            <div class="circular-content">
+                <div class="circular-text">
+                    <h3>16th District Rally Circular 2026</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Rally schedule and programs</li>
+                        <li><i class="fas fa-check-circle"></i> Registration guidelines</li>
+                        <li><i class="fas fa-check-circle"></i> Required documents</li>
+                        <li><i class="fas fa-check-circle"></i> Contact information</li>
+                    </ul>
+                    <!-- Updated PDF Link -->
+                    <a href="https://drive.google.com/file/d/1gsSEVl8-eVPy0uFSXJ-dm5UfEq-qP9qt/view?usp=drivesdk" target="_blank" class="btn-pdf">
+                        <i class="fas fa-file-pdf"></i> Download Circular
+                    </a>
+                </div>
+                <div class="pdf-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Registration with Dropdown -->
+        <div id="registration" class="card-panel">
+            <h2 class="section-title"><i class="fas fa-google"></i> ONLINE REGISTRATION PROCESS</h2>
+            <div class="registration-container">
+                <div class="reg-info">
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Select your group from the dropdown</li>
+                        <li><i class="fas fa-hand-pointer"></i> Click group name to open form</li>
+                        <li><i class="fas fa-envelope"></i> Login with your Group's Email</li>
+                        <li><i class="fas fa-file-signature"></i> Fill Google Sheet</li>
+                        <li><i class="fas fa-paper-plane"></i> Submit to complete registration</li>
+                    </ul>
+                </div>
+                <div class="dropdown-container">
+                    <h3><i class="fas fa-users"></i> Select Your Group</h3>
+                    <select id="groupSelect" class="group-dropdown">
+                        <option value="">-- Choose Group --</option>
+                        <option value="dangapara">DANGAPARA GROUP</option>
+                        <option value="deshbandhu">DESHBANDHU GROUP</option>
+                        <option value="officers">OFFICERS COLONY GROUP</option>
+                        <option value="south">SOUTH GROUP</option>
+                        <option value="vivekananda">VIVEKANANDA GROUP</option>
+                    </select>
+                    <div id="groupLinks" class="group-links">
+                        <p style="color: #666; font-style: italic;">Select a group to view registration link</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modern Schedule Section -->
+        <div id="schedule">
+            <h2 class="section-title"><i class="fas fa-calendar-alt"></i> Rally Schedule</h2>
+            
+            <div class="schedule-container">
+                <!-- Modern Toggle Cards -->
+                <div class="schedule-toggles">
+                    <div class="toggle-card" data-day="day1">
+                        <div class="toggle-content">
+                            <div class="toggle-icon"><i class="fas fa-calendar-day"></i></div>
+                            <div class="day-number">25</div>
+                            <div class="day-month">MARCH</div>
+                            <div class="day-name">THURSDAY</div>
+                        </div>
+                    </div>
+                    <div class="toggle-card" data-day="day2">
+                        <div class="toggle-content">
+                            <div class="toggle-icon"><i class="fas fa-calendar-day"></i></div>
+                            <div class="day-number">26</div>
+                            <div class="day-month">MARCH</div>
+                            <div class="day-name">FRIDAY</div>
+                        </div>
+                    </div>
+                    <div class="toggle-card" data-day="day3">
+                        <div class="toggle-content">
+                            <div class="toggle-icon"><i class="fas fa-calendar-day"></i></div>
+                            <div class="day-number">27</div>
+                            <div class="day-month">MARCH</div>
+                            <div class="day-name">SATURDAY</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Schedule Display Panel -->
+                <div id="schedulePanel" class="schedule-panel">
+                    <!-- Dynamic content will be inserted here -->
+                </div>
+            </div>
+
+            <!-- Venue Information -->
+            <div class="map-notice">
+                <i class="fas fa-map-marked-alt"></i>
+                <div>
+                    <strong>Venue:</strong> District Training Centre, 04th Avenue, Foreman Colony, Kanchrapara.
+                </div>
+            </div>
+        </div>
+
+        <!-- Updated Guidelines Section -->
+        <div class="card-panel">
+            <h2 class="section-title"><i class="fas fa-clipboard-list"></i> Guidelines for Participants</h2>
+            <div class="guidelines-text">
+                <p><i class="fas fa-check-circle"></i> Each participant must carry their individual kit and usual camp kit, along with a correct and complete Scout/Guide uniform as per APRO-II/III. They should also bring canvas shoes, a toilet kit, a plate, a mug, a spoon, a water bottle, a torch with batteries, a notebook, a pen, a pencil, knotting ropes, staves, and sketch pens. Additionally, participants should bring costumes and necessary accessories for program and rally events, musical instruments, utensils, lanterns, a first aid kit, a bucket, a spade, a shovel, pegs, a hammer, and a ground sheet etc.</p>
+            </div>
+        </div>
+
+        <!-- Contact Section - Updated with new information -->
+        <div id="contact" class="contact-section">
+            <h2 class="section-title" style="color: white; border-left-color: #ffaa33;">Contact</h2>
+            <div class="contact-info">
+                <div class="contact-item"><i class="fas fa-phone-alt"></i> DOC(S) 8240850235</div>
+                <div class="contact-item"><i class="fas fa-phone-alt"></i> DOC(G) 9062666488</div>
+                <div class="contact-item"><i class="fas fa-envelope"></i> kpa.district@gmail.com</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer - Updated with new developer credit -->
+    <footer>
+        <div class="footer-content">
+            <div class="rail">Eastern Railway Bharat Scouts and Guides</div>
+            <p>Kanchrapara District Association | 16th District Rally 2026</p>
+            <p>March 25 - March 27, Kanchrapara</p>
+            <p style="font-size: 0.95rem;">Venue: District Training Centre, 04th Avenue, Foreman Colony</p>
+            <div class="developer-credit">
+                <i class="fas fa-code"></i> Developed by Maintained by <strong>Sri. Biswajit Saren/SM/VVK</strong> <i class="fas fa-heart" style="color: #ffaa33;"></i>
+            </div>
+            <p style="font-size: 0.9rem; margin-top: 15px;">© 2025 Kanchrapara District Association, ERBSG</p>
+        </div>
+    </footer>
+
+    <script>
+        // Group registration links - Replace with actual Google Form links
+        const groupLinks = {
+            dangapara: { name: "DANGAPARA GROUP", url: "https://docs.google.com/spreadsheets/d/1SdSLj_at2na__gjq8MmJJ8BasxBNoHTe3NYzonxPUbg/edit?usp=sharing" },
+            deshbandhu: { name: "DESHBANDHU GROUP", url: "https://docs.google.com/spreadsheets/d/1kB-Chxr7Jpkzn8pqBOU-RTxzM0oj3XhdVYTxsjLlLjo/edit?usp=sharing" },
+            officers: { name: "OFFICERS COLONY GROUP", url: "https://docs.google.com/spreadsheets/d/13hU_VEroehxAZvqwO_ajelnx-aNQO5y9480j41gkMWc/edit?usp=sharing" },
+            south: { name: "SOUTH GROUP", url: "https://docs.google.com/spreadsheets/d/1vetL61VrJ5zXTzo976KnkpY8IWv52KZXDLSUJjzZBgk/edit?usp=sharing" },
+            vivekananda: { name: "VIVEKANANDA GROUP", url: "https://docs.google.com/spreadsheets/d/1PtnjBWMMoJjsgZYs_ONnrB2urPmrHAASjAJmfEwp5U8/edit?usp=sharing" }
+        };
+
+        // Schedule data - Updated with all three days programs and PDF links
+        const scheduleData = {
+            day1: {
+                title: 'March 25, Thursday',
+                pdf: 'https://drive.google.com/file/d/1wcIoEUdHEIABanzBj5SW096p3uiX94Pm/view?usp=sharing',
+                activities: [
+                    'Flag Ceremony - 9:00 Hrs.',
+                    'Arrival of Chief Guest - 10:00 Hrs.',
+                    'General Salute followed by Ceremonial March Past - 10:10 Hrs.',
+                    'Rally Inauguration & Rally Flag Hoisting - 10:25 Hrs.',
+                    'Physical Display - 10:40 Hrs.',
+                    'Address by the Chief Guest - 11:20 Hrs.',
+                    'Inauguration of Adventure Expedition Zone & Little Explorers Land - 11:30 Hrs.',
+                    'Various Rally Competitions & Activities - 12:15 Hrs.',
+                    'Unit Venture Competitions & Activities - 15:00 Hrs.',
+                    'Exhibition - 16:30 Hrs.',
+                    'Folk Dance (Cub & Bulbul) - 18:00 Hrs.',
+                    'Creative Dance (Scout/Guide/Rover/Ranger) - 19:00 Hrs.',
+                    'Rally Reels Presentation on Screen - 20:00 Hrs.'
+                ]
+            },
+            day2: {
+                title: 'March 26, Friday',
+                pdf: 'https://drive.google.com/file/d/12bDi6S5MjS7jeFKQH2eEhIhp1lRMR6r4/view?usp=sharing',
+                activities: [
+                    'Physical Exercise - 7:30 Hrs.',
+                    'Final Inspection & Rangoli Competition - 8:30 Hrs.',
+                    'Flag Ceremony - 9:00 Hrs.',
+                    'March Past (Standard Judging) - 10:00 Hrs.',
+                    'Band Display (Standard Judging) - 11:30 Hrs.',
+                    'Arrival of Guests & Contingent Inspection - 16:00 Hrs.',
+                    'March Past - 16:20 Hrs.',
+                    'Band Display - 16:35 Hrs.',
+                    'Felicitation of Guests - 16:50 Hrs.',
+                    'Valedictory Programme - 17:20 Hrs.',
+                    'Grand Dinner - 19:00 Hrs.'
+                ]
+            },
+            day3: {
+                title: 'March 27, Saturday',
+                pdf: 'https://drive.google.com/file/d/10UsMe9NfIwSrou3zjm8bJ4yabYFMpDyX/view?usp=sharing',
+                activities: [
+                    'All Faith Prayer - 7:30 Hrs.',
+                    'Shramdan - 8:00 Hrs.',
+                    'Breakfast - 8:30 Hrs.',
+                    'Flag Ceremony - 9:00 Hrs.',
+                    'Final Talk & Open Session - 9:30 Hrs.',
+                    'Closing Ceremony - 11:00 Hrs.'
+                ]
+            }
+        };
+
+        // Dropdown functionality
+        document.getElementById('groupSelect').addEventListener('change', function() {
+            const selected = this.value;
+            const container = document.getElementById('groupLinks');
+            
+            if (selected && groupLinks[selected]) {
+                container.innerHTML = `<a href="${groupLinks[selected].url}" target="_blank" class="group-btn">
+                    <span>${groupLinks[selected].name}</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>`;
+            } else {
+                container.innerHTML = `<p style="color: #666; font-style: italic;">Select a group to view registration link</p>`;
+            }
+        });
+
+        // Schedule toggle functionality
+        const toggleCards = document.querySelectorAll('.toggle-card');
+        const schedulePanel = document.getElementById('schedulePanel');
+
+        function updateSchedule(day) {
+            const data = scheduleData[day];
+            if (!data) return;
+
+            let activitiesHtml = '';
+            data.activities.forEach(activity => {
+                activitiesHtml += `<li><i class="fas fa-clock"></i> ${activity}</li>`;
+            });
+
+            schedulePanel.innerHTML = `
+                <div class="schedule-content">
+                    <div class="schedule-info">
+                        <h3><i class="fas fa-calendar-alt"></i> ${data.title}</h3>
+                        <ul>${activitiesHtml}</ul>
+                        <a href="${data.pdf}" target="_blank" class="schedule-pdf-btn">
+                            <i class="fas fa-file-pdf"></i> Download Schedule
+                        </a>
+                    </div>
+                    <div class="schedule-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                </div>
+            `;
+        }
+
+        toggleCards.forEach(card => {
+            card.addEventListener('click', function() {
+                toggleCards.forEach(c => c.classList.remove('active'));
+                this.classList.add('active');
+                updateSchedule(this.dataset.day);
+            });
+        });
+
+        // Set first day as active
+        if (toggleCards.length > 0) {
+            toggleCards[0].classList.add('active');
+            updateSchedule('day1');
+        }
+    </script>
+</body>
+</html>
